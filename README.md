@@ -20,6 +20,9 @@
 ## 安装
 
 ```sh
+# 从 GitHub 安装（当前推荐，npm 包发布前）
+dsh plugin --profile web add github:zengchunhua-boost/dsh-cat-star
+
 # npm 发布后
 dsh plugin --profile web add dsh-cat-star
 

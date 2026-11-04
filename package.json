@@ -29,6 +29,11 @@
     "leaderboard",
     "price-estimate"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zengchunhua-boost/dsh-cat-star.git"
+  },
+  "author": "zengchunhua-boost",
   "license": "MIT",
   "engines": {
     "node": ">=20"

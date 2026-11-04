@@ -1,0 +1,15 @@
+# dsh-cat-star profile patch.
+#
+# Installed through the CLI —
+#
+#   dsh plugin --profile web add link:/path/to/dsh-cat-star
+#
+# — the command reconciles `dsh.profile.bundles` against installed packages and,
+# seeing this declaration, appends the package to the bundle stack. The profile
+# boot then merges this patch (a single `insert` of the plugin row) exactly like a
+# manual cordis.patch.yml mount line. The entry `name` must equal the package name
+# so the client-modules scan resolves `./client` and serves it at
+# /plugins/dsh-cat-star/client.js.
+- insert:
+    - id: cat-star
+      name: 'dsh-cat-star'

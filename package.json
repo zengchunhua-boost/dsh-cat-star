@@ -1,0 +1,51 @@
+{
+  "name": "dsh-cat-star",
+  "version": "0.1.0",
+  "description": "喵星大道 — cat beauty scoring for the DSH Web GUI: upload a cat photo or video, let AI auto-detect the breed, and get a CFA-inspired scorecard with radar chart, per-dimension commentary, a China-market price estimate, a share card, and an optional public leaderboard.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cat",
+    "cfa",
+    "beauty",
+    "score",
+    "vision",
+    "leaderboard",
+    "price-estimate"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/cat-star.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

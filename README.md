@@ -20,11 +20,8 @@
 ## 安装
 
 ```sh
-# 从 GitHub 安装（当前推荐，npm 包发布前）
+# 从 GitHub 安装
 dsh plugin --profile web add github:zengchunhua-boost/dsh-cat-star
-
-# npm 发布后
-dsh plugin --profile web add dsh-cat-star
 
 # 本地开发（link 安装）
 dsh plugin --profile web add link:/path/to/dsh-cat-star
@@ -81,6 +78,4 @@ node leaderboard/test/worker.test.mjs  # 榜单 Worker 测试（6 项）
 ## 发布前检查（维护者）
 
 - [ ] `package.json` 补 `repository` / `author`（发布到 GitHub 前）
-- [ ] `npm pack --dry-run` 确认只带必要文件
-- [ ] 用打出的 tgz 在干净 profile 安装验证一次
-- [ ] 到 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 开 PR 收录到插件市场
+- [ ] 到 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 开 PR 收录到插件市场（仓库需满 1 天）

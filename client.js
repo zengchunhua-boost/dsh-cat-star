@@ -1953,6 +1953,16 @@ window.__ModuleLoader__.load({
                 },
                 judgeLoading ? '裁判端详中…' : reading ? '正在读取本地文件…' : '开始评分',
               ),
+              h(
+                'a',
+                {
+                  className: 'cb-leaderboard-link',
+                  href: LEADERBOARD_URL,
+                  target: '_blank',
+                  rel: 'noreferrer noopener',
+                },
+                '🐱 猫猫颜值榜 ↗',
+              ),
             ),
             h(
               'div',
@@ -2139,6 +2149,8 @@ window.__ModuleLoader__.load({
       '.cb-history-empty{margin:0;font-size:11.5px;color:var(--cb-tertiary)}',
       '.cb-history-row{display:flex;align-items:center;gap:10px;width:100%;padding:8px 10px;border-radius:12px;border:none;background:var(--cb-card);cursor:pointer;text-align:left;color:inherit;box-shadow:0 1px 2px rgba(0,0,0,.04)}',
       '.cb-history-row:hover{background:var(--cb-fill)}',
+      '.cb-leaderboard-link{display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 14px;border-radius:12px;background:var(--cb-card);color:var(--cb-blue);font-size:13px;font-weight:600;text-decoration:none;border:.5px solid var(--cb-sep);flex:none}',
+      '.cb-leaderboard-link:hover{background:var(--cb-fill)}',
       '.cb-history-rank{width:22px;flex:none;font-size:12px;font-weight:700;color:var(--cb-secondary);text-align:center}',
       '.cb-history-thumb{width:42px;height:42px;object-fit:cover;border-radius:10px;flex:none}',
       '.cb-history-meta{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1}',

@@ -79,7 +79,7 @@ const LOCAL_MEDIA_TYPES = new Map([
 ])
 
 /** Public leaderboard entry the host forwards publishes to (same-origin for the browser). */
-const LEADERBOARD_TARGET = process.env.DSH_CAT_LEADERBOARD_URL || 'https://dsh-cat-star-leaderboard.netlify.app'
+const LEADERBOARD_TARGET = process.env.DSH_CAT_LEADERBOARD_URL || 'https://dsh-cat-beauty-leaderboard.netlify.app'
 
 /** In-flight judge calls. Photos are cheap, but model calls are not: cap concurrency at 2. */
 let inFlight = 0
